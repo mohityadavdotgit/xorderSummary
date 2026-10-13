@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+
+  background-image: url("./assets/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  background-color: hsl(225, 100%, 94%);
+
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px 20px;
+}
+
+.container {
+  width: 450px;
+
+  background: white;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.15);
+}
+
+.hero-img {
+  width: 100%;
+  display: block;
+}
+
+.content {
+  padding: 40px;
+  text-align: center;
+}
+
+.heading {
+  font-size: 30px;
+
+  font-weight: 900;
+
+  color: hsl(223, 47%, 23%);
+}
+
+.summary-para {
+  margin-top: 20px;
+
+  line-height: 1.7;
+
+  font-size: 16px;
+
+  color: hsl(224, 23%, 55%);
+}
+
+.plan {
+  margin: 30px 0;
+
+  padding: 20px;
+
+  background: hsl(225, 100%, 98%);
+
+  border-radius: 12px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+.plan-text {
+  margin-right: auto;
+
+  margin-left: 20px;
+
+  text-align: left;
+}
+
+.plan-text h3 {
+  font-size: 17px;
+
+  color: hsl(223, 47%, 23%);
+}
+
+.plan-text p {
+  margin-top: 5px;
+
+  color: hsl(224, 23%, 55%);
+}
+
+.change-link a {
+  font-weight: 700;
+
+  color: hsl(245, 75%, 52%);
+}
+
+.change-link a:hover {
+  text-decoration: none;
+
+  color: #766cf1;
+}
+
+.proceed-btn {
+  width: 100%;
+
+  padding: 16px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background: hsl(245, 75%, 52%);
+
+  color: white;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow: 0 18px 25px rgba(56, 42, 225, 0.3);
+
+  transition: 0.3s;
+}
+
+.proceed-btn:hover {
+  background: #766cf1;
+}
+
+.cancel-order {
+  margin-top: 25px;
+
+  background: none;
+
+  border: none;
+
+  font-size: 16px;
+
+  font-weight: 700;
+
+  color: hsl(224, 23%, 55%);
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.cancel-order:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+.attribution {
+  margin-top: 25px;
+
+  font-size: 14px;
+}
+
+.attribution a {
+  color: hsl(245, 75%, 52%);
+}
+
+@media (max-width: 450px) {
+  body {
+    background-image: url("./assets/pattern-background-mobile.svg");
+  }
+
+  .container {
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .content {
+    padding: 28px;
+  }
+}
